@@ -1,4 +1,4 @@
-# New Project
+# Typescript Todo list Application Using LocalStorage
 
 > ✨ Bootstrapped with Create Snowpack App (CSA).
 
