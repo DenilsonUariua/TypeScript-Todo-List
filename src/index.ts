@@ -48,7 +48,7 @@ form?.addEventListener('submit', (e) => {
   input.value = '';
 });
 
-// function to add a new task to the list 
+// function to add a new task to the list
 function addListItem(task: Task) {
   const item = document.createElement('li');
   const label = document.createElement('label');
@@ -72,6 +72,17 @@ function addListItem(task: Task) {
   item.append(label);
   list?.append(item);
 }
+
+function deleteAllListItems() {
+  const list = document.querySelector('#task-list');
+  if (list) {
+    while (list.firstChild) {
+      list.removeChild(list.firstChild);
+    }
+
+    
+  }
+}
 // function to save tasks to local storage
 function save() {
   localStorage.setItem('tasks', JSON.stringify(tasks));
@@ -90,4 +101,5 @@ function load() {
 // function to clear local storage
 function clear() {
   localStorage.clear();
+  deleteAllListItems();
 }
