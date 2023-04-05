@@ -1,4 +1,7 @@
 # Typescript Todo list Application Using LocalStorage
+This is todo list typescript application that uses local storage to save todos
+Todo are saved to the local storage by checking the checkbox
+### Use npm start to run the application
 
 > ✨ Bootstrapped with Create Snowpack App (CSA).
 
